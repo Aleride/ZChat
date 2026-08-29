@@ -1,0 +1,14 @@
+{
+  "name": "ZChat",
+  "short_name": "ZChat",
+  "description": "端到端加密的点对点聊天",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#1c1c1e",
+  "theme_color": "#007aff",
+  "lang": "zh-CN",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
