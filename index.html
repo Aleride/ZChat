@@ -265,6 +265,8 @@ svg{display:block}
 .splash-name{font-size:20px;font-weight:600;color:#1d1d1f;letter-spacing:.5px}
 @keyframes sp{from{transform:scale(1)}to{transform:scale(1.06)}}
 @media (prefers-color-scheme: dark){#splash{background:#000}.splash-name{color:#f5f5f7}}
+  .splash-tag{font-size:13px;color:#86868b;letter-spacing:.3px;margin-top:-8px}
+@media (prefers-color-scheme: dark){.splash-tag{color:#98989d}}
 </style>  
 </head>
 <body>
@@ -350,7 +352,7 @@ setTimeout(function(){
 <div class="overlay" id="connOv">
   <div class="panel">
     <h2>ZChat</h2>
-    <div class="sub-t">点对点直连</div>
+    <div class="sub-t">Privacy. That's ZChat.</div>
     <div class="fg"><label>昵称</label><input type="text" id="nickIn" maxlength="16" placeholder="你的昵称"><div class="ferr" id="nickErr">请输入昵称</div></div>
     <div class="fg"><label>房间</label><input type="text" id="roomIn" maxlength="64" value="chat" placeholder="房间码或邀请链接,留空则自动生成"><div class="ferr" id="roomErr">请输入房间码</div></div>
     <div class="p-actions"><button class="btn primary" id="connBtn">连接</button></div>
