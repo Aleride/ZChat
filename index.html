@@ -444,7 +444,7 @@ const S={
   nick:'Guest', avatar:null, typing:{}, lastTypingSent:0, viewCount:{}
 };
 let suppressClick=false;
-const PFX='ZChat-';
+const PFX='ZChatSHP-';
 const ICE=[{urls:'stun:stun.l.google.com:19302'}];
 const MAXF=8*1024*1024;
 const HIST_CAP=100;
@@ -788,8 +788,8 @@ function readNick(){const n=$('nickIn').value.trim();if(!n){$('nickErr').classLi
 
 function doConn(){
   const nick=readNick();if(!nick)return;
-  const rid=parseRoom($('roomIn').value);
-  if(!rid){$('roomErr').classList.add('show');return}
+  let rid=parseRoom($('roomIn').value);
+  if(!rid){rid=genCode();$('roomIn').value=rid;}   // 留空则自动生成房间码
   $('roomErr').classList.remove('show');
 
   if(S.rooms.has(rid)){
